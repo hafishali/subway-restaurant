@@ -1,0 +1,351 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Borel&family=Handjet&family=Lugrasimo&family=Varela+Round&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Varela Round', sans-serif;
+    background-color: black;
+    
+}
+html{
+  scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+.navbar{
+    
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  display: flex;
+  z-index: 1000;
+  background-color: aliceblue;
+  justify-content: space-between;
+  width: 100%;
+    
+
+}
+.logo{
+    height: 100px;   
+}
+.list-item{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    padding-top: 20px;
+    /* float: right; */
+}
+.link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link:hover{
+    color: rgb(131, 230, 50);
+}
+.home-div{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.home-div video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo-home{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -200px 91px 25px -430px;;
+        transform: translate(-50%, -50%);
+        width: 200px; 
+        height: auto;
+        opacity: 0;
+        animation: slideIn 3s ease-out 1s forwards infinite;
+      }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.about-content{
+    position: relative;
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 180vh;
+    overflow: hidden;
+}
+.heading{
+    text-align: center;
+    margin-top: 25px;
+}
+.heading h1{
+    font-size: 55px;
+    color: yellow;
+}
+.heading span{
+    font-size:30px ;
+    color: rgb(130, 232, 29);
+}
+.about-main {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 130vh;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 30px; 
+
+
+  }
+  
+  .abt1 {
+    /* border: 1px solid #7c2121; */
+    width: 35rem;
+    height: 40rem;
+    padding: 20px;
+    /* background-color: aqua; */
+    margin-left: 180px;
+    margin-top: 20px;
+    animation: popup 1.5s ease forwards ;
+  }
+  @keyframes popup {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .abt-img{
+    position: absolute;
+    height: 28rem ;
+    width: 33rem;
+    /* background-color: #7c2121; */
+    margin: 10px 10px 0px 19px;
+    
+
+  }
+  .abt-img img{
+    height: 100%;
+    width: 100%;
+  }
+  .abt-head{
+    position: absolute;
+    width: 34rem;
+    height: 3rem;
+    /* background-color: blue; */
+    margin-top: 30rem;
+    margin-left: 19px;
+  }
+  .abt-head h2{
+    font-size: 31px;
+    color: greenyellow;
+  }
+  .abt-para{
+    position: absolute;
+    width: 34rem;
+    height: 6rem;
+    /* background-color: rgb(76, 186, 100); */
+    margin-top: 34rem;
+    margin-left: 19px;
+  }
+  .abt-para p{
+    font-size: 20px;
+    color: rgb(20, 134, 20);
+  }
+  .menu-div {
+    position: relative;
+    width: 100%;
+    height: 330vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
+    animation: shake 0.5s;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateXde(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+
+  
+
+
+.menu-items {
+  /* position: absolute; */
+    /* border: 1px solid #ccc; */
+    margin:60px 30px 0px 50px;;
+    width: 35rem;
+    height: 35rem;
+    text-align: center;
+    /* background-color: blue; */
+    
+}
+.menu-img{
+  width:31rem ;
+  height: 26rem;
+  background-color: blueviolet;
+  margin: 33px 10px 0px 33px;
+ 
+  
+ 
+
+}
+.menu-img img{
+  width: 100%;
+  height: 100%;
+  
+  
+}
+.menu-head{
+  font-family: Helvetica Neue Black Condensed;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 70px 5px 0px 5px; */
+  width: 31rem;
+  height: 4rem;
+  /* background-color: bisque; */
+  color: green;
+}
+.order-main{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-content{
+  position: absolute;
+  /* display: flex; */
+  width: 80%;
+  height: 80vh;
+  /* background-color: red; */
+}
+.order-img{
+  position: absolute;
+  width: 315px;
+  height: 600px;
+  /* background-color: aqua; */
+  margin: 5rem;
+  margin-right: 2rem;
+  transition: transform 0.3s ease;
+
+}
+.order-img img{
+  width: 100%;
+  height: 100%;
+}
+.order-img:hover {
+  /* Apply a rotation transformation when hovered */
+  transform: rotate(10deg); /* You can adjust the rotation angle as needed */
+}
+
+.left-con{
+  width: 45rem;
+  height: 35rem;
+  /* background-color: beige; */
+  margin-left: 30rem;
+  margin-top: 5rem;
+}
+.left-img{
+  width: 39rem;
+  height: 13rem;
+  
+  /* background-color: blue; */
+}
+.left-img img{
+  width: 100%;
+  height: 100%;
+}
+.left-para{
+  width: 39rem;
+  height: 5rem;
+  margin-top: 3rem;
+  /* background-color: brown; */
+}
+.left-para h1{
+  font-weight: 400;
+  color: white;
+
+}
+.left-para p{
+  font-size: 28px;
+  color: white;
+}
+.left-btn{
+  width: 39rem;
+  height: 5rem;
+  margin-top: 10px;
+  /* background-color: rgb(55, 157, 208); */
+}
+.btn-img{
+  height: 3.2rem;
+  width: 11rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-right: 2rem;
+  margin-top: 17px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.btn-img:hover {
+  /* Apply a transformation and change appearance when hovered */
+  transform: scale(1.05); /* Scale up slightly */
+  filter: brightness(1.2); /* Increase brightness */
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
